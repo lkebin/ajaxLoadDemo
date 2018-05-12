@@ -11,13 +11,7 @@
     <div>Hello world</div>
     <div id="partial-container"></div>
     <script>
-        $(function(){
-            $.ajax({
-                url: './partial.html'
-            }).done(function(msg){
-                $('#partial-container').html(msg);
-            })
-        });
+        $('#partial-container').load('b.html');
     </script>
 </body>
 
